@@ -1,0 +1,1111 @@
+﻿<html>
+<head>
+    <title>get 4 gate</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    //Latest compiled and minified CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    //jQuery library
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    //Latest compiled JavaScript
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+
+
+        .registration_but {
+            cursor: pointer;
+            margin-top: 10px;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            position: absolute;
+            right: 170px;
+        }
+
+        .login_but {
+            margin-top: 10px;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            position: absolute;
+            right: 100px;
+        }
+        /*img{
+            position:absolute;
+            top:100px;
+
+        }*/
+        ._45 {
+            background-color: #f5f5f2;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+        }
+        /*._2020 {
+            background-color: #4B83E9;
+        }*/
+
+        .n1 {
+            background-color: yellow;
+        }
+
+        .n2 {
+            font-size: 35px;
+            color: royalblue;
+        }
+
+        .n3 {
+            margin-top: 30px;
+            display: block;
+            border-color: aqua;
+            cursor: pointer;
+            text-align: center;
+            padding: 4px 10px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .n4 {
+            display: block;
+            background-color: #f5f5f5;
+            box-sizing: border-box;
+        }
+
+        /*.mySlides fade {
+
+            width: 1200px;
+            height: 150px;
+
+
+        }*/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            height: 150px;
+            width: 1200px;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin-left: 10px;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #badge {
+            position: absolute;
+            background-color: rgb(255, 30, 30);
+            color: white;
+            border-radius: 50%;
+            padding: 5px 8px;
+            font-size: 14px;
+            top: 10px;
+            right: 158px;
+        }
+
+        #container {
+            background-color: white;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1.5fr 1.5fr 5fr 1fr;
+            font-family: 'Lato', sans-serif;
+            z-index: 1;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-sizing: border-box;
+            position: fixed;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+        }
+
+        #vp {
+            background-color: 2a2626;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+        }
+
+        h4 {
+            margin-top: 100px;
+            color: white;
+            background-color: 060606;
+            padding: 15px 40px;
+        }
+
+        #shopName {
+            font-size: 40px;
+            font-family: 'Lato', sans-serif;
+        }
+
+            #shopName a {
+                text-decoration: none;
+                color: rgb(29, 29, 29);
+            }
+
+            #shopName > b {
+                font-weight: 900;
+                font: black;
+            }
+
+        #collection {
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+            #collection a {
+                text-decoration: none;
+                color: rgb(29, 29, 29);
+            }
+
+        .button {
+            background-color: 3880ea;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            /* margin-left:50px;*/
+            margin-right: -120px;
+        }
+
+        ._789 {
+            background-color: 3880ea;
+            border-radius: 12px;
+            color: white;
+            padding: 8px 9px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-left: -480px;
+            margin-right: 360px;
+        }
+        /*
+        .karve{
+            background-color: 3880ea;
+            border-radius:12px;
+            color: white;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+
+        }*/
+
+        .search {
+            padding: 14px;
+            /* color: gray; */
+            color: rgb(29, 29, 29);
+            min-width: 25px;
+            text-align: center;
+            position: absolute;
+        }
+
+        .addedToCart {
+            font-size: 1.5em;
+            margin-right: 25px;
+        }
+
+        #user {
+            display: flex;
+            /* float: right; */
+            align-items: center;
+        }
+
+        .userIcon {
+            font-size: 45px;
+        }
+
+        #input {
+            width: 35em;
+            height: 3em;
+            padding: 2px 50px;
+            background-color: rgb(241, 241, 241);
+            border: none;
+            border-radius: 5px;
+        }
+
+            #input::placeholder {
+                font-weight: bold;
+            }
+
+        #regis {
+            margin-right: 450px;
+        }
+
+        #input:focus {
+            outline: none;
+        }
+
+        #user a {
+            color: rgb(29, 29, 29)
+        }
+
+        /* ----------------------------- MEDIA QUERY --------------------------- */
+
+        @media(max-width: 1300px) {
+            #collection {
+                font-size: 13px;
+            }
+
+            #input {
+                width: 25em;
+            }
+        }
+
+        @media(max-width: 1212px) {
+            #collection {
+                font-size: 13px;
+            }
+
+            #input {
+                width: 20em;
+            }
+
+
+
+            .addedToCart {
+                font-size: 1.5em;
+                margin: 10px 20px;
+            }
+        }
+
+        @media(max-width: 1090px) {
+            #container {
+                display: grid;
+                grid-template-columns: 1fr 2fr 0.5fr;
+            }
+
+            #search {
+                display: none;
+            }
+        }
+
+        @media(max-width: 750px) {
+            #shopName {
+                font-size: 28px;
+            }
+
+            #collection {
+                font-size: 12px;
+                margin-right: 80px;
+            }
+
+            .userIcon {
+                font-size: 35px;
+            }
+
+            .addedToCart {
+                font-size: 1.2em;
+                margin: 10px 20px;
+            }
+        }
+
+        @media(max-width: 650px) {
+            #shopName {
+                font-size: 24px;
+            }
+
+            #collection {
+                font-size: 10px;
+            }
+
+            .userIcon {
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width: 550px) {
+            #container {
+                padding: 20px 25px;
+            }
+        }
+
+        /* badge media */
+
+        @media(max-width: 1480px) {
+            #badge {
+                right: 150px;
+            }
+        }
+
+        @media(max-width: 1426px) {
+            #badge {
+                right: 142px;
+            }
+        }
+
+        @media(max-width: 1360px) {
+            #badge {
+                right: 136px;
+            }
+        }
+
+        @media(max-width: 1320px) {
+            #badge {
+                right: 129px;
+            }
+        }
+
+        @media(max-width: 1259px) {
+            #badge {
+                right: 119px;
+            }
+        }
+
+        @media(max-width: 1212px) {
+            #badge {
+                right: 96px;
+            }
+        }
+
+        @media(max-width: 1155px) {
+            #badge {
+                right: 87px;
+            }
+        }
+
+        @media(max-width: 1090px) {
+            #badge {
+                right: 119px;
+            }
+        }
+
+        @media(max-width: 1030px) {
+            #badge {
+                right: 109px;
+            }
+        }
+
+        @media(max-width: 970px) {
+            #badge {
+                right: 100px;
+            }
+        }
+
+        @media(max-width: 910px) {
+            #badge {
+                right: 94px;
+            }
+        }
+
+        @media(max-width: 850px) {
+            #badge {
+                right: 87px;
+            }
+        }
+
+        @media(max-width: 750px) {
+            #badge {
+                right: 87px;
+                padding: 3px 6px;
+                font-size: 12px;
+                top: 12px;
+            }
+        }
+
+        @media(max-width: 650px) {
+            #badge {
+                right: 78px;
+            }
+        }
+
+        @media(max-width: 550px) {
+            #badge {
+                right: 62px;
+                top: 18px;
+            }
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #containerSlider {
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+
+            #containerSlider img {
+                width: 100%;
+                height: 50%;
+                text-align: center;
+                align-content: center;
+            }
+
+        @media(max-width: 732px) {
+            #containerSlider img {
+                height: 12em;
+            }
+        }
+
+        @media(max-width: 500px) {
+            #containerSlider img {
+                height: 10em;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 490px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+    </style>
+    <script type="text/javascript">
+        function openimg() {
+            window.open("https://www.google.com/search?q=shopping&source=lmns&bih=609&biw=1280&hl=en-GB&sa=X&ved=2ahUKEwiTnZHO3oP3AhUd_TgGHQuXB4MQ_AUoAHoECAEQAA");
+        }
+        function openfas() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/tshirts.html");
+        }
+        function openfash() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/womentshirt.html");
+        }
+        function openfash_1() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/wfoot.html");
+        }
+        function openfash_2() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/mfoot.html");
+        }
+        function openele_1() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/mobile.html");
+        }
+        function openele_2() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/refrigarator.html");
+        }
+        function openele_3() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/washingmac.html");
+        }
+        function openele_4() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/tvv.html");
+        }
+        function openbeau_1() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/eyemak.html");
+        }
+        function openbeau_2() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/hairmak.html");
+        }
+        function openbeau_3() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/facemak.html");
+        }
+        function openbeau_4() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/skin.html");
+        }
+        function openfur_1() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/Chair.html");
+        }
+        function openfur_2() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/dinning%20table.html");
+        }
+        function openfur_3() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/sofa.html");
+        }
+        function openfur_4() {
+            window.open("file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/bedd.html");
+        }
+    </script>
+</head>
+<body>
+
+    <!--<h1 style="background-color:yellow;"><i>Get at Gate</i> </h1>-->
+    <!--<nav class="n1">
+        <a class="n2" href="file:///C:/Users/Gopal/source/repos/Project4/Project4/html/website.html"><b><i> Get At Gate</i></b></a>
+
+        <a href="file:///C:/Users/Gopal/source/repos/Project2/Project1/html/Registration.html?">
+            <button type="submit" class="registration_but">registration</button>
+        </a>
+        <a href="file:///C:/Users/Gopal/source/repos/Project4/Project4/html/login.html">
+            <button type="submit" class="login_but">Login</button>
+        </a>
+
+    </nav>-->
+    <header>
+        <section>
+            <!-- MAIN CONTAINER -->
+            <div id="container">
+                <!-- SHOP NAME -->
+                <div id="shopName"><a href="# "> <b>GET@GATE</b> </a></div>
+                <!-- COLLCETIONS ON WEBSITE -->
+                <!--<div id="collection">
+                    <div id="clothing"><a href="clothing.html"> Registration </a></div>
+                    <div id="accessories"><a href="accessories.html"> ACCESSORIES </a></div>
+
+                </div>-->
+                <!-- SEARCH SECTION -->
+                <div id="search">
+                    <i class="fas fa-search search"></i>
+                    <input type="text" id="input" name="searchBox" placeholder="Search ">
+
+                </div>
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="file:///C:/Users/Vaibhav/source/repos/Project1/Project1/html/finalccart.html"><img id="hu" src="C:\Users\Vaibhav\Downloads\repos\repos\Project4\Project4\html\img\cart.png" height="26px" width="24px" /> </a>
+                </div>
+                <!--<a href="#" class="karve">Search</a>-->
+                <!-- USER SECTION (CART AND USER ICON) -->
+                <div id="user">
+                    <!--<a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
+                    <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>-->
+                    <div id="collection">
+                        <!--<div id="regis"><a href="file:///C:/Users/Gopal/source/repos/Project2/Project1/html/Registration.html"> Registration </a></div>
+                        <div id="accessories"><a href="file:///C:/Users/Gopal/source/repos/Project4/Project4/html/login.html"> Login </a></div>-->
+                        <!--<a href="file:///C:/Users/Gopal/source/repos/Project2/Project1/html/Registration.html" class="_789" >Regitration</a>-->
+                        <button type="submit" value="search" class="_789"> search </button>
+                        <a href="file:///C:/Users/Vaibhav/Downloads/login.html" class="button">Login</a>
+                    </div>
+                </div>
+                <!--<button type="button"  > search </button>-->
+                <!--<div id="user">
+                    <div id="collection">
+                        <a href="file:///C:/Users/Gopal/source/repos/Project2/Project1/html/Registration.html">Regitration</a>
+                    </div>
+                </div>-->
+        </section>
+    </header>
+    <!--<div class="n3">
+        <input type="search" placeholder="Search..." />
+        <button type="submit">search</button>
+    </div><br />-->
+    <br /><br /><br />
+    <!--<div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="C:\Users\Gopal\Downloads\ddd.png" height="220px" width="1200px">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="C:\Users\Gopal\Downloads\qqq.png" height="220px" width="1200px">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="C:\Users\Gopal\Downloads\iii.png" height="220px" width="1200px">
+            <div class="text">Caption Three</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 1000); // Change image every 2 seconds
+        }
+    </script>-->
+    <!--<img src=""  id="image" />
+    <script type="text/javascript">
+        //let image = document.getElementById("image").src = "skin.jpg";
+        //let images = ['skin.jpg', 'sofa.jpg','hair.jpg','eye.jpg']
+        //setInterval(function () {
+        //    let random = Math.floor(Math.random() * 4);
+        //    image.src = images[random];
+        //}, 800);
+        function first() {
+            document.getElementById("image").src = "skin.jpg";
+        }
+        setInterval(first, 2000);
+
+    </script>-->
+
+
+    <section>
+        <div id="containerSlider">
+            <div id="slidingImage"> <img src="img/img1.png" alt="image1"> </div>
+            <div id="slidingImage"> <img src="img/img2.png" alt="image2"> </div>
+            <div id="slidingImage"> <img src="img/img3.png" alt="image3"> </div>
+            <div id="slidingImage"> <img src="img/img4.png" alt="image4"> </div>
+        </div>
+    </section>
+    <!--<div class="n4">
+        <div class="_45">
+            <h1><b>Electronics</b></h1>
+            <hr />
+            <table>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="im" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\mphone.jpg" height="100" width="80" onclick="openele_1()" />
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\download.jpg" height="100" width="80" onclick="openele_2()" />
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refrigerator &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\wash.jpg" height="160" width="140" onclick="openele_3()" />
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Washing Machine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bigI(this)" onmouseout="normalI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\tvdownload.jpg" height="100" width="180" onclick="openele_4()" /><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TV</p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="_45">
+        <h1><b>Beauty</b></h1>
+        <hr />
+        <table>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="im" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\eye.jpg" height="100" width="80" onclick="openbeau_1()" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eye Makeup &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\hair.jpg" height="100" width="80" onclick="openbeau_2()"/>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hair Makeup &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bI(this)" onmouseout="nI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\face.jpg" height="120" width="100" onclick="openbeau_3()"/>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Face Makeup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bigI(this)" onmouseout="normalI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\skin.jpg" height="100" width="180" onclick="openbeau_4()"/><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skin Makeup</p></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="_45">
+        <h1><b>Fashion</b></h1>
+        <hr />
+        <table>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="im" onmouseover="bbImg(this)" onmouseout="nnImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\mens tshirt.jpg" height="100" width="100" onclick="openfas()" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mens T-Shirts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\womens tshirt.jpg" height="100" width="80" onclick="openfash()" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Womens T-Shirts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bI(this)" onmouseout="nI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\w footwear.jpg" height="120" width="100" onclick="openfash_1()" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Womens Footwear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bigI(this)" onmouseout="normalI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\m footwear.jpg" height="100" width="180" onclick="openfash_2()" /><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mens footwear</p></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="_45">
+        <h1><b>Furniture</b></h1>
+        <hr />
+        <table>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="im" onmouseover="bbImg(this)" onmouseout="nnImg(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\chair.jpg" height="100" width="100" onclick="openfur_1()" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img onmouseover="bigI(this)" onmouseout="normalI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\dinning table.jpg" height="100" width="180" onclick="openfur_2()" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dinning Table &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bbigI(this)" onmouseout="nnormalI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\sofa.jpg" height="120" width="220" onclick="openfur_3()" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sofa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img onmouseover="bigI(this)" onmouseout="normalI(this)" src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\bed.jpg" height="100" width="180" onclick="openfur_4()" /><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed</p></td>
+            </tr>
+        </table>
+    </div>-->
+    <div>
+        <table>
+            <tr>
+                <h2><b>Electronics</b></h2><b><hr /></b>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (26).jfif" alt="Denim Jeans" style="width:100%" onclick="openele_3()">
+                    <h1>Washing Machine</h1>
+                    <!--<p class="price">599</p>
+                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (27).jfif" alt="Denim Jeans" style="width:100%" onclick="openele_4()">
+                    <br /><br /><br /><h1>TV</h1>
+                    <!--<p class="price">599</p>
+                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (32).jfif" alt="Denim Jeans" style="width:100%" onclick="openele_2()">
+                    <h1>Refrigarator</h1>
+                    <!--<p class="price">599</p>
+                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (18).jfif" alt="Denim Jeans" style="width:100%" onclick="openele_1()">
+                    <h1>Mobile</h1>
+                    <!--<p class="price">599</p>
+                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Add to Cart</button></p>-->
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <h2><b>Fashion</b></h2>
+                <b><hr /></b>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (1).jfif" alt="Denim Jeans" style="width:100%" onclick="openfas()">
+                    <h1>Mens T-shirts</h1>
+
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (16).jfif" alt="Denim Jeans" style="width:100%" onclick="openfash()">
+                    <br /><br />
+                    <h1>Womens T-shirts</h1>
+
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (12).jfif" alt="Denim Jeans" style="width:100%" onclick=" openfash_2()">
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <h1>Mens Footwear</h1>
+
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (14).jfif" alt="Denim Jeans" style="width:100%" onclick="openfash_1()">
+                    <h1>Womens Footwear</h1>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <h2><b>Beauty</b></h2>
+                <b><hr /></b>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (33).jfif" alt="Denim Jeans" style="width:100%" onclick="openbeau_1()">
+                    <h1>Eye Makeup</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (46).jfif" alt="Denim Jeans" style="width:100%" onclick="openbeau_2()">
+                    <h1>Hair</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (47).jfif" alt="Denim Jeans" style="width:100%" onclick="openbeau_3()">
+                    <h1>Face</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (48).jfif" alt="Denim Jeans" style="width:100%" onclick="openbeau_4()">
+                    <h1>Skin</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <h2><b>Furniture</b></h2>
+                <b><hr /></b>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (54).jfif" alt="Denim Jeans" style="width:100%" onclick="openfur_1()">
+                    <h1>Chair</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (56).jfif" alt="Denim Jeans" style="width:100%" onclick="openfur_2()">
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <h1>Dinning Table</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (61).jfif" alt="Denim Jeans" style="width:100%" onclick="openfur_3()">
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <h1>Sofa</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+                <td class="card">
+                    <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\OIP (67).jfif" alt="Denim Jeans" style="width:100%" onclick="openfur_4()">
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <h1>Bed</h1>
+                    <!--<p class="price">599</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>-->
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--<footer class="_2020">-->
+    <h2>What Can You Buy From Get at Gate?</h2>
+    <h3>Mobile Phones</h3>
+    <p>
+        From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Get at Gate Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Get at Gate Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.
+    </p>
+    <h3>Electronic Devices and Accessories</h3>
+    <p>
+        When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+
+        Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
+
+        Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+
+        How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation
+    </p>
+    <h3> Home and Furniture   </h3>
+    <p>
+        Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.
+
+        You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Get at Gate
+
+    </p>
+    <h3> Lifestyle</h3>
+    <p>
+        Get at Gate, 'India ka Fashion Capital', is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Get at Gate will have your back each time.
+    </p>
+    <!--</footer>-->
+    <script>
+        function bImg(x) {
+            x.style.height = "250px";
+            x.style.width = "180px";
+        }
+
+        function nImg(x) {
+            x.style.height = "120px";
+            x.style.width = "100px";
+        }
+    </script>
+    <script>
+        function bbImg(x) {
+            x.style.height = "250px";
+            x.style.width = "180px";
+        }
+
+        function nnImg(x) {
+            x.style.height = "100px";
+            x.style.width = "100px";
+        }
+    </script>
+    <script>
+        function bI(x) {
+            x.style.height = "250px";
+            x.style.width = "180px";
+        }
+
+        function nI(x) {
+            x.style.height = "120px";
+            x.style.width = "100px";
+        }
+    </script>
+    <script>
+        function bigImg(x) {
+            x.style.height = "250px";
+            x.style.width = "180px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "100px";
+            x.style.width = "80px";
+        }
+    </script>
+    <script>
+        function bbigI(x) {
+            x.style.height = "250px";
+            x.style.width = "180px";
+        }
+
+        function nnormalI(x) {
+            x.style.height = "120px";
+            x.style.width = "220px";
+        }
+    </script>
+    <script>
+        function bigI(x) {
+            x.style.height = "250px";
+            x.style.width = "180px";
+        }
+
+        function normalI(x) {
+            x.style.height = "100px";
+            x.style.width = "180px";
+        }
+    </script>
+    <footer id="vp">
+        <center>
+            <h1 style="color:white;"><u>Get At Gate</u></h1>
+            <p style="color:white;">Get at Gate is online shopping web.</p>
+            <p style="color:white;"> Where you can buy Electronics,Beauty Product, Furniture,Clothes.</p>
+            <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\footer\google.png" height="25px" width="23px" />
+            <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\footer\facebook.png" height="25px" width="23px" />
+            <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\footer\linkdin.png" height="25px" width="23px" />
+            <img src="C:\Users\Vaibhav\source\repos\Project1\Project1\html\iimage\ii\footer\twiter.png" height="25px" width="23px" />
+        </center>
+
+        <h4>Copyright &copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 1800-563-9457</h4>
+
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#containerSlider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+</html>
+<html>
+
+
+
+
+
+</html>
